@@ -1,0 +1,185 @@
+:root {
+  --primero: #5d04d9;
+  --segundo: #03318c;
+  --tercero: #9303a6;
+  --cuarto: #c004d4;
+  --quinto: #8c0375;
+  --fuente: "DotGothic16", sans-serif;
+}
+header {
+  height: 95px;
+}
+footer {
+  position: static;
+  height: 210px;
+  width: 100%;
+  bottom: 0px;
+}
+.header {
+  background-color: var(--primero);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.header-title {
+  color: white;
+  font-family: var(--fuente);
+  font-size: 24px;
+}
+.text {
+  color: white;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 16px;
+}
+
+.container {
+  display: flex;
+  padding: 5%;
+  gap: 50px;
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  .container {
+    flex-direction: row;
+  }
+}
+.products {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+@media only screen and (min-width: 769px) {
+  .products {
+    width: 70%;
+    height: 80%;
+  }
+}
+.products-title,
+.form-title {
+  text-align: center;
+  font-family: var(--fuente);
+  font-size: 24px;
+  padding: 5px;
+}
+.products-body {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 5px;
+  padding: 20px 0px;
+  max-height: 500px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.product-card {
+  border-radius: 5px;
+  background-color: var(--primero);
+  width: 190px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+}
+.product-image {
+  border-radius: 5px;
+  width: 90%;
+  padding: 10px;
+  aspect-ratio: 1/1;
+}
+.product-title,
+.product-price {
+  color: white;
+  text-align: left;
+  padding-left: 10px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.product-description {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 10px 10px 0px;
+}
+.product-delete {
+  width: 24px;
+  height: 24px;
+  border-color: none;
+  color: white;
+}
+.bi {
+  display: flex;
+  justify-content: center;
+}
+.form-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  padding: 40px;
+}
+.form-input,
+.form-numeric,
+.form-file {
+  border: 3px solid var(--segundo);
+  border-radius: 25px;
+  width: 392px;
+  height: 40px;
+  font-size: 16px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: var(--segundo);
+  display: flex;
+}
+
+.btn {
+  display: flex;
+  gap: 15px;
+}
+.send-btn {
+  width: 180px;
+  height: 50px;
+  border-radius: 15px;
+  background-color: var(--segundo);
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: white;
+  border: none;
+}
+.clean-btn {
+  width: 180px;
+  height: 50px;
+  border-radius: 15px;
+  border: 3px solid var(--segundo);
+  color: var(--segundo);
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+input::file-selector-button {
+  display: none;
+}
+input::placeholder {
+  font-size: 16px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: var(--segundo);
+}

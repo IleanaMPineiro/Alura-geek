@@ -1,0 +1,90 @@
+<!DOCTYPE >
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="styles/reset.css" />
+    <link rel="stylesheet" type="text/css" href="styles/index.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="header-title">&#127918;&#127918;&#127918; Alura Geek</h1>
+    </header>
+    <div class="container">
+      <div class="products">
+        <h1 class="products-title">Mis productos:</h1>
+        <div class="products-body" id="products-body">
+          <div class="product-card" id="1">
+            <img src="img/stray.jpg" class="product-image" />
+            <h4 class="product-title">stray</h4>
+            <div class="product-description">
+              <h4 class="product-price">$ 150000</h4>
+              <div
+                class="product-delete"
+                type="button"
+                id="delete"
+                onclick="deleteItem(1)"
+              >
+                <i class="bi bi-trash3"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="form">
+        <h1 class="form-title">Agregar Producto:</h1>
+        <div>
+          <form class="form-body" id="form">
+            <input
+              type="text"
+              placeholder="Nombre..."
+              class="form-input"
+              id="name"
+              name="name"
+              required
+            />
+
+            <input
+              type="number"
+              min="0"
+              placeholder="Precio..."
+              class="form-numeric"
+              id="num"
+              name="price"
+              required
+            />
+            <input
+              id="file-upload"
+              type="file"
+              class="form-file"
+              id="file"
+              name="image"
+              required
+            />
+            <div class="btn">
+              <button class="send-btn" type="submit" id="send">Enviar</button>
+              <button class="clean-btn" type="reset">Limpiar</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <footer class="header">
+      <h1 class="header-title">&#127918;&#127918;&#127918; Alura Geek</h1>
+      <br />
+      <h3 class="text">Desarollado por ileana</h3>
+      <br />
+      <h4 class="text">Alura Latam- 2024</h4>
+    </footer>
+    <script src="main.js"></script>
+  </body>
+</html>
